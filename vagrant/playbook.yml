@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+#  - unarchive: src=jdk-7u75-linux-x64.tar.gz dest=/opt
+#    sudo: yes
+  - debug: var=hostvars[inventory_hostname]
